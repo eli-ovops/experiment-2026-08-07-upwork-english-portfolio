@@ -1,0 +1,25 @@
+任务：两份独立英文 Upwork 作品集精选版（本地草稿）
+日期：2026-08-07
+
+只读源文件
+1. 专业设计对比效果(1).pdf，16 页，SHA-256 ac344d6f6ecc95b4edf2ccfa71c7a867d4b55d4fcaa68f1d1421e1beec209983
+2. 作品展示(1)(2).pdf，37 页，SHA-256 93666f1eea2e5deda13fd2fe327f59d25b3c3ce5f67c02465c746f8056547ccb
+
+复用检索（GitHub，2026-08-07）
+- gitbrent/PptxGenJS：MIT，持续维护，通用 PPTX 生成；可直接作为依赖，但本任务的 Presentations Skill 强制使用 @oai/artifact-tool，因此不采用。
+- siril9/presentation-skill：MIT，近期维护，工作流适配；仅借鉴“源码优先、渲染 QA”的方法，不复制模板或内容。
+- artifact-kit/pptxgenjs-jsx：MIT，近期维护，JSX 声明层；与指定工具链重复，不采用。
+- ashafaei/pdf2pptx：MIT，近期仍有活动；主要将 PDF 页面转为 PPTX 页面，不满足匿名化与真正可编辑重建。
+- kevinmcguinness/pdf2pptx：MIT，近期维护；同样更适合图像式转换，不采用。
+结论：使用已加载的 @oai/artifact-tool 进行自主重建；仅复用官方运行时、渲染和 QA 工具。差异部分是匿名化、英文改写、可编辑版式与双套独立叙事。
+
+内容选择
+- Comparison：源页 2（红色信息层级）、7（绿色流程/产品结构）、11（深色高端叙事）作为版式逻辑参考；源页 1/3/5/8/14 为分级封面，未纳入；其余含品牌、人物、商业/活动/技术信息或重复层级，省略。
+- Showcase：源页 2（土木/企业浅色版式）、9（中国风编辑排版）、15（企业蓝色系统）、28（深蓝产品介绍）作为视觉语言参考；精选版最终聚合为 3 个匿名案例。含人物、人脸、Logo、党政、医疗、竞赛、发布会、年会、可识别品牌与数据的页面不直接使用。
+
+公共边界
+- 不主张原始商业内容、数据、项目成果或第三方素材的作者身份。
+- 对外角色仅为 Presentation Designer - Visual Redesign & Slide Layout。
+- 所有可见案例均标注 Anonymized redesign sample。
+- 无外部联系方式、真实姓名、Logo、人脸、敏感指标或未公开数据。
+

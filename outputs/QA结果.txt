@@ -1,0 +1,29 @@
+QA 结果 - 2026-08-07
+
+交付结构
+- English_Portfolio_Comparison.pptx：7 页，16:9，可编辑对象重建。
+- English_Portfolio_Comparison.pdf：7 页，16:9。
+- English_Portfolio_Showcase.pptx：7 页，16:9，可编辑对象重建。
+- English_Portfolio_Showcase.pdf：7 页，16:9。
+- 两套逐页 PNG 与联系表已生成。
+
+验证结果
+- Artifact Tool 结构导出：通过。
+- PPTX slides_test 溢出检测：两套均通过，未检测到画布外溢出。
+- 逐页 PNG 视觉 QA：14 页逐页检查完成；标题、正文、页码、卡片、对比框和免责声明无可见裁切或意外重叠。
+- PDF 导出：使用 LibreOffice 重新打开 PPTX 并导出成功。
+- PDF 渲染 QA：使用 Poppler 将两份最终 PDF 全页渲染为 PNG，并复核联系表；未发现字体乱码、黑块、裁切或版式漂移。
+- 字体：使用 Aptos；LibreOffice 导出后的实际 PDF 渲染无可见字体替代缺陷。不同电脑编辑 PPTX 时仍建议在 PowerPoint 中复核。
+- 匿名化：可见内容未出现真实姓名、电话、邮箱、微信、地址、客户/学校/医院/公司 Logo、汇报人、负责人、团队履历、证书编号、人脸、儿童、真实商业/医疗/技术指标或未公开数据。
+- 源素材：未直接嵌入源 PDF 页面、源人物、Logo 或第三方图片；未读取或使用此前 JPG。
+- 元数据：PPTX 的 creator、lastModifiedBy、company、manager、title 等字段已清空；PDF 元数据字典已清空。
+- 外部操作：未上传、未操作 Upwork；本任务未执行修改、移动或删除两份源 PDF 的命令。
+- 源文件最终复核：制作初期两份微信临时 PDF 均存在并完成只读 SHA-256 校验；最终复核时整个 temp/drag 临时目录已不存在，推定为微信或系统外部清理，因此无法再次确认原路径状态。建议用户重新保存原文件到稳定目录。
+
+修正记录
+- 首轮结尾页的 EDITABLE 文本出现断行，已扩大文本框并减小字号后修正。
+- 首轮文化案例残留中文装饰字，已改为英文版可用的数字标记。
+
+结论
+- 本地草稿通过结构、溢出、PDF 渲染和逐页视觉 QA。
+- 这不等于公开展示授权或 Upwork 上传验收；上传前仍需用户确认 README 中列出的四项问题。
